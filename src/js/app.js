@@ -3,12 +3,14 @@ import CurrentCell from './logic.js';
 
 let random = Math.floor(Math.random() * 16);
 const cell = new Cell(random);
+let activeCell = 80;
 cell.activateCell(random);
+
 setInterval(() => {
   cell.deactivateCell(random);
   const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
   const filteredArr = arr.filter((item) => item !== random);
-  const activeCell = filteredArr[Math.floor(Math.random() * 15)];
+  activeCell = filteredArr[Math.floor(Math.random() * 15)];
   cell.activateCell(activeCell);
   random = activeCell;
 }, 1000);
