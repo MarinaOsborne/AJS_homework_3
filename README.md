@@ -1,2 +1,1 @@
-# AJS_homework__2
-Здесь должен быть бейдж, но его нет, потому что у меня проблемы с аккаунтом appveyor. Задала вопрос в слак, пока тишина. Как разберусь, добавлю)
+[![Build status](https://ci.appveyor.com/api/projects/status/rfmgprs5k3tht0j7?svg=true)](https://ci.appveyor.com/project/MarinaOsborne/ajs-homework-3)
