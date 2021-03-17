@@ -1,4 +1,4 @@
-import Cell from './field_generator.js';
+import Cell from './field_generator';
 import CurrentCell from './logic.js';
 
 let random = Math.floor(Math.random() * 16);
