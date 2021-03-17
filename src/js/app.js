@@ -1,5 +1,5 @@
 import Cell from './field_generator';
-import CurrentCell from './logic.js';
+import CurrentCell from './logic';
 
 let random = Math.floor(Math.random() * 16);
 const cell = new Cell(random);
@@ -19,11 +19,11 @@ function getCell(index) {
   const currentCell = new CurrentCell(index);
   currentCell.field.addEventListener('click', () => {
     currentCell.gotAim(index);
-    if (lost.textContent == 5) {
+    if (lost.textContent === 5) {
       currentCell.gameOver();
     }
   });
 }
-for (let index = 1; index < 16; index++) {
+for (let index = 1; index < 16; index += 1) {
   getCell(index);
 }
